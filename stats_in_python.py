@@ -79,7 +79,7 @@ def calculate_median(number:list)->float:
     return med
 
 # First file and Column: 3
-filepath1 = "C:/Users/Merisin/Downloads/data_file.txt"
+filepath1 = "files/data_file.txt"
 
 numbers, count = load_data(filepath1, 3)
 
@@ -94,7 +94,7 @@ print(calculate_median(numbers))
 
 
 # Second file and Column: 3
-filepath2 = "C:/Users/Merisin/Downloads/data_file2.txt"
+filepath2 = "files/data_file2.txt"
 numbers, count = load_data(filepath2, 3)
 print(count)
 print(len(numbers))
@@ -105,7 +105,7 @@ print(calculate_std_dev(numbers))
 print(calculate_median(numbers))
 
 # Third file and Column: 3
-filepath3 = "C:/Users/Merisin/Downloads/data_file3.txt"
+filepath3 = "files/data_file3.txt"
 numbers, count = load_data(filepath3, 3)
 
 print(count)
@@ -136,3 +136,4 @@ print(get_max_and_min(numbers))
 print(calculate_variance(numbers))
 print(calculate_std_dev(numbers))
 print(calculate_median(numbers))
+
