@@ -39,11 +39,17 @@ def calculate_average(numbers: list) -> float:
 
     return avg
 
-def get_max_and_min(numbers:list)->tuple[float, float]:
+def calculate_maximum(numbers: list) -> float:
+    
     maximum = max(numbers)
+
+    return maximum
+
+def calculate_minimum(numbers: list) -> float:
+    
     minimum = min(numbers)
 
-    return maximum, minimum
+    return minimum
   
 
 def calculate_variance(numbers: list) -> float:
@@ -79,38 +85,41 @@ def calculate_median(number:list)->float:
     return med
 
 # First file and Column: 3
-filepath1 = "files/data_file.txt"
+filepath1 = "C:/Users/Merisin/Downloads/data_file.txt"
 
 numbers, count = load_data(filepath1, 3)
 
-print(count)
-print(len(numbers))
-print(calculate_average(numbers))
-print(get_max_and_min(numbers))
-print(calculate_variance(numbers))
-print(calculate_std_dev(numbers))
-print(calculate_median(numbers))
+print("Average = %.3f" % count)
+print("Average = %.3f" % len(numbers))
+print("Average = %.3f" % calculate_average(numbers))
+print("Maximum = %.3f" % calculate_maximum(numbers))
+print("Minimum = %.3f" % calculate_minimum(numbers))
+print("Variance = %.3f" % calculate_variance(numbers))
+print("Std Dev = %.3f" % calculate_std_dev(numbers))
+print("Median = %.3f" % calculate_median(numbers))
 
 
 
 # Second file and Column: 3
-filepath2 = "files/data_file2.txt"
+filepath2 = "C:/Users/Merisin/Downloads/data_file2.txt"
+
 numbers, count = load_data(filepath2, 3)
-print(count)
-print(len(numbers))
-print(calculate_average(numbers))
-print(get_max_and_min(numbers))
-print(calculate_variance(numbers))
-print(calculate_std_dev(numbers))
-print(calculate_median(numbers))
+print("Average = %.3f" % count)
+print("Average = %.3f" % len(numbers))
+print("Average = %.3f" % calculate_average(numbers))
+print("get_max_and_min = %.3f" % get_max_and_min(numbers))
+print("Variance = %.3f" % calculate_variance(numbers))
+print("Std Dev = %.3f" % calculate_std_dev(numbers))
+print("Median = %.3f" % calculate_median(numbers))
 
 # Third file and Column: 3
-filepath3 = "files/data_file3.txt"
+filepath3 = "C:/Users/Merisin/Downloads/data_file3.txt"
+
 numbers, count = load_data(filepath3, 3)
 
-print(count)
-print(len(numbers))
-print(calculate_average(numbers))
+print("Average = %.3f" % count)
+print("Average = %.3f" % len(numbers))
+print("Average = %.3f" % calculate_average(numbers))
 
 # Third file and Column: 10
 numbers, count = load_data(filepath3, 10)
@@ -118,22 +127,22 @@ numbers, count = load_data(filepath3, 10)
 # Third file and Column: 1
 numbers, count = load_data(filepath3, 1)
 
-print(count)
-print(len(numbers))
-print(calculate_average(numbers))
-print(get_max_and_min(numbers))
-print(calculate_variance(numbers))
-print(calculate_std_dev(numbers))
-print(calculate_median(numbers))
+print("Average = %.3f" % count)
+print("Average = %.3f" % len(numbers))
+print("Average = %.3f" % calculate_average(numbers))
+print("get_max_and_min = %.3f" % get_max_and_min(numbers))
+print("Variance = %.3f" % calculate_variance(numbers))
+print("Std Dev = %.3f" % calculate_std_dev(numbers))
+print("Median = %.3f" % calculate_median(numbers))
 
 
 # Second file and Column: 4
 numbers, count = load_data(filepath2, 4)
-print(count)
-print(len(numbers))
-print(calculate_average(numbers))
-print(get_max_and_min(numbers))
-print(calculate_variance(numbers))
-print(calculate_std_dev(numbers))
-print(calculate_median(numbers))
+print("Average = %.3f" % count)
+print("Average = %.3f" % len(numbers))
+print("Average = %.3f" % calculate_average(numbers))
+print("get_max_and_min = %.3f" % get_max_and_min(numbers))
+print("Variance = %.3f" % calculate_variance(numbers))
+print("Std Dev = %.3f" % calculate_std_dev(numbers))
+print("Median = %.3f" % calculate_median(numbers))
 
